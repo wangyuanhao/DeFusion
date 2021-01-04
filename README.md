@@ -26,7 +26,7 @@ Note that the directories *Network_Enhancement* and *SNFmatlab* store codes down
 
 ### Work flow
 
-![workflow](.\img\workflow.jpg)
+![Workflow](https://github.com/wangyuanhao/DeFusion/blob/master/img/workflow.jpg)
 
 ### Data availability
 
