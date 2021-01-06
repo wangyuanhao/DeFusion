@@ -31,24 +31,26 @@ label(31:60) = 2;
 label(61:90) = 3;
 d = 2;
 
-xLim = [-4, 8; -5, 10; -2, 30; -1, 2];
-yLim = [-5, 10; -5, 10; -10, 20; -1.5, 1.5];
+% xLim = [-4, 8; -5, 10; -2, 30; -1, 2];
+% yLim = [-5, 10; -5, 10; -10, 20; -1.5, 1.5];
 
 for i = 1:length(D)
     pcaDi = pcaTransform(D{i}, d);
+    xLim = [min(pcaDi(:, 1))-0.5, max(pcaDi(:, 1))+0.5];
+    yLim = [min(pcaDi(:, 2))-0.5, max(pcaDi(:, 2))+0.5];
     if i == 4
         lgd = true;
     else
         lgd = false;
     end
-    plotScatter(pcaDi, label, lgd, xLim(i, :), yLim(i, :));
+    plotScatter(pcaDi, label, lgd, xLim, yLim);
 end
 
 %% plot function
 function [pcaX] = pcaTransform(X, d)
 % centerX = X - mean(X, 1);
 coeff = pca(X, 'Centered', true);
-pcaX = X*coeff(:, 1:d);
+pcaX = (X - mean(X,1))*coeff(:, 1:d);
 end
 
 function [] = plotScatter(data, label, lgd, xLim, yLim)
@@ -61,8 +63,8 @@ center = zeros(length(uqLabel), 2);
 for i = 1:length(uqLabel)
     center(i, :) = mean(data(label==uqLabel(i), :), 1);
 end
-x1 = (min(xLim)+0.01):0.01:(max(xLim)-0.01); %0.1, 0.1, 0.2, 0.03
-x2 = (min(yLim)+0.01):0.01:(max(yLim)-0.01);
+x1 = (min(xLim)+0.15):0.09:(max(xLim)-0.1); %0.1, 0.1, 0.2, 0.03
+x2 = (min(yLim)+0.15):0.09:(max(yLim)-0.1);
 [x1G,x2G] = meshgrid(x1,x2);
 XGrid = [x1G(:),x2G(:)]; % Defines a fine grid on the plot
 
