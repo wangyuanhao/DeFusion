@@ -99,7 +99,7 @@ We downloaded data from TCGA (https://portal.gdc.cancer.gov/ ) using the followi
 
 
 
-* Step 8: Install the **GDC Data Transfer Tool**. The GDC Data Transfer Tool can be downloaded from https://gdc.cancer.gov/access-data/gdc-data-transfer-tool. In Windows, the GDC Data Transfer Tool is used in the terminal. First, go to the directory where “gdc-clinet.exe” locates in command line. Then it should be ready for used in the terminal. An alternative could be adding location of the “gdc client.exe” to the environment variables.
+* Step 8: Install the **GDC Data Transfer Tool**. The GDC Data Transfer Tool can be downloaded from https://gdc.cancer.gov/access-data/gdc-data-transfer-tool. In Windows, the GDC Data Transfer Tool is used in the terminal. First, go to the directory where “gdc-clinet.exe” locates in command line. Then it should be ready for used in the terminal. An alternative could be adding location of the “gdc-client.exe” to the environment variables.
 
 ![step8](img/step8.jpg)
 
