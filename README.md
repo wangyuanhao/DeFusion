@@ -37,7 +37,7 @@ Note that the directories *Network_Enhancement* and *SNFmatlab* store codes down
 * We downloaded the external validation dataset--microarray gene expression profiles of 242 patients from Gene Expression Omnibus (GEO) with access number GSE14520. 
 * Data used in proteomics-and-phosphoproteomics integration was retrieved from supplementary data  in [4]
 
-In seven TCGA cancer cohorts, we have tried to integrate mRNA and miRNA expression and DNA methylation corresponding to transcriptome and epigenome, respectively.
+In seven TCGA (**The Cancer Genome Atlas**) cancer cohorts, we have tried to integrate mRNA and miRNA expression and DNA methylation corresponding to transcriptome and epigenome, respectively.
 
 We also have tried to integrate genome, transcriptome, and epigenome using copy number estimate, mRNA and miRNA expression, and DNA methylation in TCGA-BRCA. In our paper, we have labeled this cohort as TCGA-BRCA~+cnv~. 
 
@@ -51,9 +51,9 @@ We have tried proteomics-and-phosphoproteomics integration by using proteomics a
 >
 > [4] Xu JY, Zhang C, Wang X, et al. Integrative proteomic characterization of human lung adenocarcinoma. Cell  2020;182(1):245-261.
 
-### Downloading data from TCGA official website (https://portal.gdc.cancer.gov/ ) 
+### Downloading data from the TCGA official website (https://portal.gdc.cancer.gov/ ) 
 
-We downloaded data from TCGA (https://portal.gdc.cancer.gov/ ) using the following steps, which we illustrate with downloading HTseq-FPKM files of TCGA-BRCA as a running example. Downloading files of miRNA expression and DNA methylation follows the same steps. Other datasets which are not obtained from the TCGA official website are well-organized tables and can be downloaded directly from the given links.
+We downloaded data from TCGA (https://portal.gdc.cancer.gov/ ) using the following steps, which we illustrate with downloading HTseq-FPKM files of TCGA-BRCA as a running example. Downloading files of miRNA expression, copy number estimate, and DNA methylation follows the same steps. Other datasets which are not obtained from the TCGA official website are well-organized tables and can be downloaded directly from the given links.
 
 
 
@@ -99,7 +99,7 @@ We downloaded data from TCGA (https://portal.gdc.cancer.gov/ ) using the followi
 
 
 
-* Step 8: Install the GDC Data Transfer Tool. The GDC Data Transfer Tool can be downloaded from https://gdc.cancer.gov/access-data/gdc-data-transfer-tool. In Windows, the GDC Data Transfer Tool is used in the terminal. First, go to the directory where “gdc-clinet.exe” locates in command line. Then it should be ready for used in the terminal. An alternative could be adding location of the “gdc client.exe” to the environment variables.
+* Step 8: Install the **GDC Data Transfer Tool**. The GDC Data Transfer Tool can be downloaded from https://gdc.cancer.gov/access-data/gdc-data-transfer-tool. In Windows, the GDC Data Transfer Tool is used in the terminal. First, go to the directory where “gdc-clinet.exe” locates in command line. Then it should be ready for used in the terminal. An alternative could be adding location of the “gdc client.exe” to the environment variables.
 
 ![step8](img/step8.jpg)
 
