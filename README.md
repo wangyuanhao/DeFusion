@@ -51,6 +51,54 @@ We have tried proteomics-and-phosphoproteomics integration by using proteomics a
 >
 > [4] Xu JY, Zhang C, Wang X, et al. Integrative proteomic characterization of human lung adenocarcinoma. Cell  2020;182(1):245-261.
 
+### Downloading data from TCGA
+
+We downloaded data from TCGA (https://portal.gdc.cancer.gov/ ) using the following steps, which we illustrate with downloading HTseq-FPKM files of TCGA-BRCA as a running example. Files of miRNA expression and DNA methylation follow the same steps. Other datasets which are not obtained from the TCGA official website are well-organized tables and can be download directly from the given links.
+
+> Step 1: Search for TCGA projects in the main page
+
+![step1](img/step1.jpg)
+
+> Step 2: Click the link in the ‘Files’ column corresponding to the RNA-seq
+
+![step2](img/step2.jpg)
+
+> Step 3: Check the “HTSeq-FPKM” checkbox 
+
+![step3](img/step3.jpg)
+
+> Step 4:  Add all files to the cart
+
+![step4](img/step4.jpg)
+
+> Step 5: Click the “Cart” 
+
+![step5](img/step5.jpg)
+
+> Step 6: Download clinical and sample information in “tsv” format
+
+![step6](img/step6.jpg)
+
+> Step 7: Download the manifest file for all files in the cart.
+
+![step7](img/step7.jpg)
+
+> Step 8: Install the GDC Data Transfer Tool. The GDC Data Transfer Tool can be downloaded from https://gdc.cancer.gov/access-data/gdc-data-transfer-tool. In Windows, the GDC Data Transfer Tool is used in the terminal. First, go to the directory where “gdc-clinet.exe” locates in command line. Then it should be ready for used in the terminal. An alternative could be adding location of the “gdc client.exe” to the environment variables.
+
+![step8](img/step8.jpg)
+
+> Step 9: Download all files in the cart using the manifest file with the GDC Data Transfer Tool. A user manual can be found in [https://docs.gdc.cancer.gov/Data_Transfer_Tool/Users_Guide/Data_Download_and_Upload/#downloading-data-using-a-manifest-file](https://docs.gdc.cancer.gov/Data_Transfer_Tool/Users_Guide/Data_Download_and_Upload/). More details about the GDC Data Transfer Tool’s download functionality can be found in the “Download help menu” section.
+
+The command below shows downloading all files listed in the manifest file to a directory specified by the location following the –d option. The location and name of the manifest file follow the –m option.  
+
+```shell
+gdc-client download -d D:\data\TCGA_download_example\ -m D:\data\TCGA_download_example\gdc_manifest_201912012_014201.txt
+```
+
+![step9](img/step9.jpg)
+
+> Step 10: Expression data and clinical information can be matched with samples under the relation between the manifest file, sample sheet and clinical file. In the sample sheet, samples and the names of their expression data files listed in manifest file are given.
+
 ### Pre-processing steps
 
 * In TCGA cancer cohorts, paitents with missing survival information are removed.
