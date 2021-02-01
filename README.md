@@ -51,7 +51,7 @@ We have tried proteomics-and-phosphoproteomics integration by using proteomics a
 >
 > [4] Xu JY, Zhang C, Wang X, et al. Integrative proteomic characterization of human lung adenocarcinoma. Cell  2020;182(1):245-261.
 
-### Downloading data from TCGA
+### Downloading data from TCGA official website (https://portal.gdc.cancer.gov/ ) 
 
 We downloaded data from TCGA (https://portal.gdc.cancer.gov/ ) using the following steps, which we illustrate with downloading HTseq-FPKM files of TCGA-BRCA as a running example. Downloading files of miRNA expression and DNA methylation follows the same steps. Other datasets which are not obtained from the TCGA official website are well-organized tables and can be download directly from the given links.
 
