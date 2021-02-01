@@ -105,7 +105,7 @@ We downloaded data from TCGA (https://portal.gdc.cancer.gov/ ) using the followi
 
 
 
-> Step 9: Download all files in the cart using the manifest file with the GDC Data Transfer Tool. A user manual can be found in [https://docs.gdc.cancer.gov/Data_Transfer_Tool/Users_Guide/Data_Download_and_Upload/#downloading-data-using-a-manifest-file](https://docs.gdc.cancer.gov/Data_Transfer_Tool/Users_Guide/Data_Download_and_Upload/). More details about the GDC Data Transfer Tool’s download functionality can be found in the “Download help menu” section.
+> Step 9: Download all files in the cart using the manifest file with the GDC Data Transfer Tool. A user manual can be found in  https://docs.gdc.cancer.gov/Data_Transfer_Tool/Users_Guide/Data_Download_and_Upload/. More details about the GDC Data Transfer Tool’s download functionality can be found in the “Download help menu” section.
 
 The command below shows downloading all files listed in the manifest file to a directory specified by the location following the –d option. The location and name of the manifest file follow the –m option.  
 
