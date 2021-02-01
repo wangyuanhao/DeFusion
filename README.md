@@ -53,7 +53,7 @@ We have tried proteomics-and-phosphoproteomics integration by using proteomics a
 
 ### Downloading data from the TCGA official website (https://portal.gdc.cancer.gov/ ) 
 
-We downloaded data from TCGA (https://portal.gdc.cancer.gov/ ) using the following steps, which we illustrate with downloading HTseq-FPKM files of TCGA-BRCA as a running example. Downloading files of miRNA expression, copy number estimate, and DNA methylation follows the same steps. Other datasets which are not obtained from the TCGA official website are well-organized tables and can be downloaded directly from the given links.
+We downloaded data from TCGA (https://portal.gdc.cancer.gov/ ) using the following steps, which we illustrate with downloading HTseq-FPKM files of TCGA-BRCA as a running example. Downloading files of miRNA expression, copy number estimate, and DNA methylation follows the same steps. 
 
 
 
@@ -119,6 +119,8 @@ gdc-client download -d D:\data\TCGA_download_example\ -m D:\data\TCGA_download_e
 
 
 * Step 10: Expression data and clinical information can be matched with samples under the relation between the manifest file, sample sheet and clinical file. In the sample sheet, samples and the names of their expression data files listed in manifest file are given.
+
+Other datasets which are not obtained from the TCGA official website are well-organized tables and can be downloaded directly from the given links.
 
 ### Pre-processing steps
 
