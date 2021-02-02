@@ -1,4 +1,6 @@
-## DeFusion: a denoised network regularization for multi-omics integration
+# DeFusion: a denoised network regularization for multi-omics integration
+
+*Note: if the Readme file can not be loaded completely, please refer to the PDF version of Readme file in the repository.*
 
 ### Dependencies
 
@@ -26,7 +28,7 @@ Note that the directories *Network_Enhancement* and *SNFmatlab* store codes down
 
 ### Work flow
 
-![Workflow](https://github.com/wangyuanhao/DeFusion/blob/master/img/workflow.jpg)
+![Workflow](/img/workflow.jpg)
 
 ### Data availability
 
@@ -59,7 +61,7 @@ We downloaded data from TCGA (https://portal.gdc.cancer.gov/ ) using the followi
 
 * Step 1: Search for TCGA projects in the main page
 
-![step1](img/step1.jpg)
+##### ![step1](img/step1.jpg)
 
 
 
